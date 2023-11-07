@@ -1,6 +1,6 @@
 # hotbar
 execute if score #Slot invs matches 0..8 run function invs:src/load/no_tag/hotbar with storage invs:cache Inventory[0]
-execute if score #Slot invs matches 0..8 run return 0
+execute if score #Slot invs matches 0..8 run return 1
 
 # inventory
 execute if score #Slot invs matches 9..35 run scoreboard players operation #Slot invs -= #9 invs
