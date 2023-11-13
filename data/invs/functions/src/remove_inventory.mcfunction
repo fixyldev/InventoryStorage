@@ -1,1 +1,1 @@
-$data remove storage invs:inventory Inventory."$(0), $(1), $(2), $(3)"
+$data remove storage invs:inventory Inventory."$(UUID0), $(UUID1), $(UUID2), $(UUID3)"
