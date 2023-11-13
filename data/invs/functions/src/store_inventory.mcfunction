@@ -1,1 +1,1 @@
-$data modify storage invs:inventory Inventory."$(0), $(1), $(2), $(3)" set from entity @s Inventory
+$data modify storage invs:inventory Inventory."$(UUID0), $(UUID1), $(UUID2), $(UUID3)" set from entity @s Inventory
