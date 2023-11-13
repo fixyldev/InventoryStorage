@@ -2,8 +2,8 @@
 execute if entity @s[type=!minecraft:player] run return 0
 
 function invs:src/get_uuid
-$data modify storage invs:cache Cache.UUID.Storage set value $(Storage)
-$data modify storage invs:cache Cache.UUID.Path set value $(Path)
-function invs:src/get_inventory with storage invs:cache Cache.UUID
+$data modify storage invs:cache Cache.Arguments.Storage set value $(Storage)
+$data modify storage invs:cache Cache.Arguments.Path set value $(Path)
+function invs:src/get_inventory with storage invs:cache Cache.Arguments
 
 return 1
