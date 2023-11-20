@@ -1,4 +1,4 @@
-# InventoryStorage
+# Inventory Storage
 [![Actively Developed](https://img.shields.io/badge/status-actively_developed-brightgreen?style=for-the-badge)](https://github.com/fixyldev/fixyldev/blob/main/STATUS.md#actively-developed)
 [![GitHub](https://img.shields.io/github/downloads/fixyldev/InventoryStorage/total?style=for-the-badge&logo=github&labelColor=gray&label)]()
 [![Release](https://img.shields.io/github/v/release/fixyldev/InventoryStorage?style=for-the-badge)](https://github.com/fixyldev/InventoryStorage/releases)
