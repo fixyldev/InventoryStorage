@@ -29,6 +29,6 @@ function invs:src/get_uuid
 $data modify storage invs:cache Cache.Arguments.ID set value $(ID)
 $data modify storage invs:cache Cache.Slot set value $(Slot)
 execute unless data storage invs:cache Cache.Slot[] run function invs:src/convert_slot with storage invs:cache Cache
-execute if data storage invs:cache Cache.Slot[0] run function invs:src/cmd/remove_inventory_slot
+execute if data storage invs:cache Cache.Slot[0] run function invs:src/cmd/remove_inventory_slot with storage invs:cache Cache.Arguments
 
 return 1
