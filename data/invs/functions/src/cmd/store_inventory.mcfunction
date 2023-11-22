@@ -22,6 +22,6 @@
 # SOFTWARE.
 ##################################################################################
 
-$data modify storage invs:inventory Inventory."$(UUID0), $(UUID1), $(UUID2), $(UUID3)".$(ID) set from entity @s Inventory
+$data modify storage invs:inventory Inventory."$(UUID0), $(UUID1), $(UUID2), $(UUID3)"."$(ID)" set from entity @s Inventory
 
-$execute unless data storage invs:inventory Inventory."$(UUID0), $(UUID1), $(UUID2), $(UUID3)".$(ID)[] run data remove storage invs:inventory Inventory."$(UUID0), $(UUID1), $(UUID2), $(UUID3)".$(ID)
+$execute unless data storage invs:inventory Inventory."$(UUID0), $(UUID1), $(UUID2), $(UUID3)"."$(ID)"[] run data remove storage invs:inventory Inventory."$(UUID0), $(UUID1), $(UUID2), $(UUID3)"."$(ID)"
