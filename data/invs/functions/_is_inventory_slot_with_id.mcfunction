@@ -23,12 +23,9 @@
 ##################################################################################
 
 # cancel if executing entity is non-player
-execute if entity @s[type=!minecraft:player] run return 0
+execute if entity @s[type=!minecraft:player] run return fail
 
 function invs:src/get_uuid
 $data modify storage invs:cache Cache.Arguments.ID set value $(ID)
 $data modify storage invs:cache Cache.Arguments.Slot set value $(Slot)
-function invs:src/cmd/is_inventory_slot with storage invs:cache Cache.Arguments
-
-execute if score #Bool invs matches 1 run return 1
-execute if score #Bool invs matches 0 run return 0
+return run function invs:src/cmd/is_inventory_slot with storage invs:cache Cache.Arguments
