@@ -26,9 +26,9 @@
 execute if entity @s[type=!minecraft:player] run return fail
 
 function invs:src/get_uuid
-$data modify storage invs:cache Cache.Arguments.ID set value $(ID)
-$data modify storage invs:cache Cache.Arguments.Storage set value $(Storage)
-$data modify storage invs:cache Cache.Arguments.Path set value $(Path)
+$data modify storage invs:cache Cache.Arguments.ID set value "$(ID)"
+$data modify storage invs:cache Cache.Arguments.Storage set value "$(Storage)"
+$data modify storage invs:cache Cache.Arguments.Path set value "$(Path)"
 function invs:src/cmd/get_inventory with storage invs:cache Cache.Arguments
 
 return 1

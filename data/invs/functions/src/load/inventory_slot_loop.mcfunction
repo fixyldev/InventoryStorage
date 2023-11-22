@@ -24,7 +24,7 @@
 
 # get item from inventory
 data remove storage invs:cache Cache.Item
-$data modify storage invs:cache Cache.Item set from storage invs:inventory Inventory."$(UUID0), $(UUID1), $(UUID2), $(UUID3)".$(ID)[{Slot:$(Slot)b}]
+$data modify storage invs:cache Cache.Item set from storage invs:inventory Inventory."$(UUID0), $(UUID1), $(UUID2), $(UUID3)"."$(ID)"[{Slot:$(Slot)b}]
 
 # store item slot
 execute store result score #Slot invs run data get storage invs:cache Cache.Item.Slot
