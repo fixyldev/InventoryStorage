@@ -25,7 +25,6 @@
 data remove storage invs:cache Cache.Inventory
 
 data modify storage invs:cache Cache.Arguments.Slot set from storage invs:cache Cache.Slot[0]
-
 function invs:src/get/inventory_slot_loop with storage invs:cache Cache.Arguments
 
 $data modify storage $(Storage) $(Path) set from storage invs:cache Cache.Inventory

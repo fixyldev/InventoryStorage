@@ -23,7 +23,8 @@
 ##################################################################################
 
 # add item to inventory cache
-$execute unless data storage invs:cache Cache.Inventory[{Slot:$(Slot)b}] run data modify storage invs:cache Cache.Inventory append from storage invs:inventory Inventory."$(UUID0), $(UUID1), $(UUID2), $(UUID3)"."$(ID)"[{Slot:$(Slot)b}]
+$data remove storage invs:cache Cache.Inventory[{Slot:$(Slot)b}]
+$data modify storage invs:cache Cache.Inventory append from storage invs:inventory Inventory."$(UUID0), $(UUID1), $(UUID2), $(UUID3)"."$(ID)"[{Slot:$(Slot)b}]
 
 # continue loop if further slots present
 data remove storage invs:cache Cache.Slot[0]
