@@ -23,7 +23,6 @@
 ##################################################################################
 
 data modify storage invs:cache Cache.Arguments.Slot set from storage invs:cache Cache.Slot[0]
-
 function invs:src/remove/inventory_slot_loop with storage invs:cache Cache.Arguments
 
 $execute unless data storage invs:inventory Inventory."$(UUID0), $(UUID1), $(UUID2), $(UUID3)"."$(ID)"[] run data remove storage invs:inventory Inventory."$(UUID0), $(UUID1), $(UUID2), $(UUID3)"."$(ID)"
