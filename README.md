@@ -1,5 +1,5 @@
 # Inventory Storage
-[![Actively Developed](https://img.shields.io/badge/status-actively_developed-brightgreen?style=for-the-badge)](https://github.com/fixyldev/fixyldev/blob/main/STATUS.md#actively-developed)
+[![Paused](https://img.shields.io/badge/status-paused-yellow?style=for-the-badge)](https://github.com/fixyldev/fixyldev/blob/main/STATUS.md#paused)
 [![License](https://img.shields.io/github/license/fixyldev/InventoryStorage?style=for-the-badge)](LICENSE)
 
 ## 🗒️ Description
